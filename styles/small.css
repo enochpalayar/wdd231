@@ -64,7 +64,7 @@ nav.show {
 
 .navigation li a:hover {
     background-color: #ffffff1a;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     transition: 0.3s ease;
 }
 
