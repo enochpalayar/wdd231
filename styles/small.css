@@ -63,8 +63,9 @@ nav.show {
 }
 
 .navigation li a:hover {
-    background-color: #ffffff1a;
-    color: var(--secondary-color);
+    background-color: #d4ac0d;
+    color: var(--text-color);
+    font-weight: bold;
     transition: 0.3s ease;
 }
 
