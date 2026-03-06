@@ -40,12 +40,10 @@ body {
 
 nav {
     background-color: var(--primary-color); 
-}
-
-nav { 
     width: 100%; 
     display: none; 
 }
+
 nav.show { 
     display: block; 
 }
