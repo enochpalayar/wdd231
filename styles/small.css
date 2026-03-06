@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #f1c40f; /* Gold for completed */
+    --text-color: #333;
+    --bg-light: #f4f4f4;
+}
+
+body { 
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0; 
+    background: var(--bg-light); 
+    color: var(--text-color); 
+}
+
+/****************************************HEADER****************************************/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    gap: 1rem;              
+    padding: 10px 0 0 0;        
+}
+
+/**************************************NAVIGATION*************************************/
+
+nav {
+    background-color: var(--primary-color); 
+}
+
+nav { 
+    width: 100%; 
+    display: none; 
+}
+nav.show { 
+    display: block; 
+}
+
+.navigation { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.navigation li a { 
+    display: block; 
+    padding: 1rem; 
+    color: white;
+    text-decoration: none; 
+    border-top: 1px solid #444; 
+}
+
+.navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    transition: 0.3s ease;
+}
+
+.navigation a.active { 
+    background: rgba(0,0,0,0.2); 
+    font-weight: bold; 
+}
+
+/**************************************HAMBUTTON*************************************/
+
+#menu { 
+    display: block;
+    position: absolute;
+    min-width: 44px;
+    min-height: 44px;      
+    right: 1.5rem; 
+    top: 1.5rem; 
+    background: none; 
+    border: none; 
+    color: white; 
+    font-size: 2rem; 
+    cursor: pointer; 
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/****************************************MAIN****************************************/
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    padding: 2rem;
+    margin: 0;
+}
+
+.card-box { 
+    background: white; 
+    margin: 1rem; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+}
+
+.card-box h2 { 
+    background: var(--primary-color); 
+    color: white;
+    margin: 0; 
+    padding: 0.5rem; 
+    text-align: center;
+    border-radius: 8px 8px 0 0; 
+}
+
+.card-box p { 
+    padding: 0.5rem; 
+    line-height: 1.6;
+    margin: 0.5rem;
+}
+
+.profile-img {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.filters { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 1rem; 
+}
+
+.filters button { 
+    padding: 0.5rem 1.5rem; 
+    cursor: pointer; 
+    border: 1px solid var(--primary-color); 
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.filters button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.filters button.active {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+
+#course-list { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 10px; 
+    padding: 1rem; 
+}
+
+.course-card { 
+    background: #eee; 
+    padding: 1rem; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-weight: bold; 
+    border-left: 5px solid #ccc; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.course-card.completed { 
+    background: var(--accent-color); 
+    border-left-color: #d4ac0d; 
+}
+
+.credits-total {
+    text-align: center;     
+    font-weight: bold;       
+    padding: 1.5rem 0;      
+    margin: 0;          
+    color: var(--primary-color);
+}
+
+/**************************************FOOTER*************************************/
+
+footer { 
+    background: var(--primary-color); 
+    color: white; 
+    text-align: center; 
+    padding: 2rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.socials a img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.socials a img:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}

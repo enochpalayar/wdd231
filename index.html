@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Enoch Palayar</title>
+    <title>Course Home Page | Enoch Palayar</title>
+    <meta name="description" content="WDD 231 Course Home Page - Portfolio of Courses completed">
+    <meta name="author" content="Enoch Palayar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Enoch Palayar</h1>
+<header>
+    <div class="header-top">
+        <div class="logo-area">
+            <img src="images/filters.svg" alt="Enoch Company Logo" width="50" height="50" class="main-logo">
+            <span class="company-name">Enoch Company</span>
+        </div>
+        <button id="menu" class="hamburger" aria-label="Toggle Menu"></button>
+    </div>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>Home</h1>
+        <div class="top-grid">
+            <section class="card-box">
+                <h2>About Me</h2>
+                <p>Hello! I am Enoch Palayar from the Philipines. I am a student at Brigham Young University - Idaho (Online) studying BS Software Development. 
+                    I love creating responsive and accessible websites that provide great user experiences.  
+                    I am also a trained and certified Virtual Assistant, having completed the Masterclass Virtual Assistant Program at Surge Marketplace. 
+                    Alongside my experience as an Executive Assistant, I specialize in Funnel Building and Strategy, 
+                    helping businesses design and structure systems that guide prospects effectively from awareness to conversion. 
+                    My background includes managing calendars, emails, and files, preparing itineraries, conducting research, and assisting in recruitment processes. 
+                    I also bring skills in project management using tools like Trello, Asana, and Slack, as well as bookkeeping with QuickBooks Online.</p>    
+                </section>
+            <section class="card-box">
+                <h2>Student Photo</h2>
+                <img src="images/enoch.png" alt="Enoch Profile" class="profile-img">
+            </section>
+        </div>
+        <section class="card-box">
+            <h2>Web and Computer Programming Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list"></div>
+            <p class="credits-total">Total Credits Required: <span id="total-credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="www.linkedin.com/in/enoch-olivo-palayar-2aaa832b6" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40"></a>
+            <a href="https://github.com/enochpalayar" target="_blank"><img src="images/github.svg" alt="GitHub" width="40" height="40"></a>
+            <a href="https://instagram.com/enochopalayar" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="40" height="40"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Enoch Palayar | Bicol, Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
