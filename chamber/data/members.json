@@ -1,0 +1,61 @@
+{
+    "companies" : [
+        {
+            "name" : "LCC Mall",
+            "address" : "San Francisco, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639623208965",
+            "website" : "https://lcc.com.ph/",
+            "imageurl" : "logo-1.webp",
+            "level" : "1"
+
+        },
+        {
+            "name" : "7/11 Store",
+            "address" : "San Francisco, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639190711711",
+            "website" : "https://www.7-eleven.com.ph/`",
+            "imageurl" : "logo-2.webp",
+            "level" : "3"
+        },
+        {
+            "name" : " Seaoil Gasoline Station",
+            "address" : "San Antonio, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+63283971010",
+            "website" : "https://www.seaoil.com.ph/",
+            "imageurl" : "logo-3.webp",
+            "level" : "3"
+        },
+        {
+            "name" : "Potato Corner",
+            "address" : "San Francisco, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639636739070",
+            "website" : "https://potatocorner.com/",
+            "imageurl" : "logo-4.webp",
+            "level" : "2"
+        },
+        {
+            "name" : "PureGold",
+            "address" : "San Isidro, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639175461367",
+            "website" : "https://corporate.puregold.com.ph/",
+            "imageurl" : "logo-5.webp",
+            "level" : "2"
+        },
+        {
+            "name" : "South Star Drug",
+            "address" : "San Francisco, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639338757053",
+            "website" : "https://southstardrug.com.ph/",
+            "imageurl" : "logo-6.webp",
+            "level" : "2"
+        },
+        {
+            "name" : "MLhuillier",
+            "address" : "San Antonio, Calabanga, Camarines Sur, Philippines",
+            "phone_number" : "+639479992472",
+            "website" : "https://mlhuillier.com/",
+            "imageurl" : "logo-7.webp",
+            "level" : "2"   
+        }
+    ]
+}

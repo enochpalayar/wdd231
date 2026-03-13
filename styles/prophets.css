@@ -1,0 +1,58 @@
+:root {
+    --primary-blue: #2c3e50;
+    --card-bg: #e0e0f0;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: var(--primary-blue);
+    color: #ffff;
+    padding: 1.5rem;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: var(--card-bg);
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px #0000001a;
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+img {
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #00000033;
+    height: auto;
+    max-width: 100%;
+}
