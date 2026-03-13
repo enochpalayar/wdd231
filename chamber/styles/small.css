@@ -135,13 +135,13 @@ nav {
 
 .buttons button:hover {
     background-color: var(--logo);
-    color: var(--white);
+    color: var(--plain);
     border-color: var(--logo);
 }
 
 .buttons button.active {
     background-color: var(--primary);
-    color: var(--white);
+    color: var(--plain);
     border-color: var(--primary);
 }
 
