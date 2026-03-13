@@ -1,8 +1,8 @@
 :root {
-    --primary-blue: #004191; 
-    --secondary-red: #8C1E1E;
-    --logo-gold: #C59D5F;  
-    --white: #ffffff;
+    --primary: #004191; 
+    --secondary: #8C1E1E;
+    --logo: #C59D5F;  
+    --plain: #ffffff;
     --card-bg: #eaebed;     
 }
 
@@ -12,13 +12,13 @@ body {
 
 h1 {
     margin-left: 1.6rem;
-    color: var(--primary-blue);
+    color: var(--primary);
 }
 /*******************************HEADER*************************/
 header {
-    background-color: var(--primary-blue);
+    background-color: var(--primary);
     padding: 1rem 3rem;
-    border-bottom: 4px solid var(--logo-gold);
+    border-bottom: 4px solid var(--logo);
 }
 
 .header-container {
@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: var(--white);
+    color: var(--plain);
 }
 
 .brand-text {
@@ -51,7 +51,7 @@ header {
 #hamburger {
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--plain);
     font-size: 2.5rem;
     cursor: pointer;
     margin-left: auto;
@@ -73,10 +73,10 @@ nav {
     flex-direction: column;
     position: absolute;
     justify-content: center;
-    top: 110px; /* Adjust based on header height */
+    top: 110px;
     left: 0;
     width: 100%;
-    background-color: var(--primary-blue);
+    background-color: var(--primary);
     z-index: 1;
 }
 
@@ -86,12 +86,12 @@ nav {
     margin: 0;
     padding: 2rem;
     gap: 20px;
-    color: var(--white);
+    color: var(--plain);
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--plain);
     font-size: 1.3rem;
     font-weight: 700;
     padding: 12px 0;
@@ -99,12 +99,12 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--logo-gold);
+    color: var(--logo);
 }
 
 .nav-links a.active {
-    color: var(--logo-gold);
-    border-bottom: 2px solid var(--logo-gold);
+    color: var(--logo);
+    border-bottom: 2px solid var(--logo);
 }
 
 /*****************************BUTTONS***************************/
@@ -119,9 +119,9 @@ nav {
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
-    border: 2px solid var(--primary-blue);
-    background-color: var(--white);
-    color: var(--primary-blue);
+    border: 2px solid var(--primary);
+    background-color: var(--plain);
+    color: var(--primary);
     transition: all 0.3s ease;
 }
 
@@ -134,15 +134,15 @@ nav {
 }
 
 .buttons button:hover {
-    background-color: var(--logo-gold);
+    background-color: var(--logo);
     color: var(--white);
-    border-color: var(--logo-gold);
+    border-color: var(--logo);
 }
 
 .buttons button.active {
-    background-color: var(--primary-blue);
+    background-color: var(--primary);
     color: var(--white);
-    border-color: var(--primary-blue);
+    border-color: var(--primary);
 }
 
 /*************************DIRECTORY CARDS*******************/
@@ -172,7 +172,7 @@ nav {
 }
 
 #members.grid section h2 {
-    color: var(--primary-blue); 
+    color: var(--primary); 
     margin: 15px 0 5px;
     font-size: 1.4rem;
 }
@@ -184,14 +184,14 @@ nav {
 }
 
 #members.grid section a {
-    color: var(--primary-blue);
+    color: var(--primary);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .membership-level {
     font-weight: 700;
-    color: var(--secondary-red); 
+    color: var(--secondary); 
     margin-top: 10px;
 }
 
@@ -221,7 +221,7 @@ nav {
 } 
 
 #members.list section h2 { 
-    color: var(--primary-blue); 
+    color: var(--primary); 
     font-size: 1.2rem;
     margin: 0;
 }
@@ -232,7 +232,7 @@ nav {
 }
 
 #members.list section a {
-    color: var(--secondary-red);
+    color: var(--secondary);
     text-decoration: underline;
     font-size: 0.9rem;
     justify-self: end;
@@ -242,21 +242,16 @@ nav {
 footer {
         display: flex;
         flex-direction: column;
-        background-color: var(--primary-blue);
-        color: var(--white);
+        background-color: var(--primary);
+        color: var(--plain);
         align-items: center;
         text-align: center;
         gap: 30px;
-        border-top: 5px solid var(--logo-gold);
+        border-top: 5px solid var(--logo);
         padding: 2rem 3rem;
     }
 
-.address {
-    grid-column: 1;
-}
-
 .social {
-    grid-column: 2;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -265,7 +260,7 @@ footer {
 .social a img {
     transition: opacity 0.3s ease, transform 0.3s ease;
     border-radius: 50px;
-    border: 5px solid var(--logo-gold);
+    border: 5px solid var(--logo);
 }
 
 .social a img:hover {
@@ -274,6 +269,5 @@ footer {
 }
 
 .project {
-    grid-column: 3;
     text-align: center;
 }
