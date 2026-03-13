@@ -41,10 +41,10 @@
         align-items: center;
     }
 
-    .social {
+    div.social {
         justify-content: center; 
     }
-    .project { 
+    div.project { 
         text-align: left; 
     }
 

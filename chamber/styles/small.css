@@ -251,23 +251,23 @@ footer {
         padding: 2rem 3rem;
     }
 
-.social {
+div.social {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.social a img {
+div.social a img {
     transition: opacity 0.3s ease, transform 0.3s ease;
     border-radius: 50px;
     border: 5px solid var(--logo);
 }
 
-.social a img:hover {
+div.social a img:hover {
     opacity: 0.8;
     transform: scale(1.2);
 }
 
-.project {
+div.project {
     text-align: center;
 }
