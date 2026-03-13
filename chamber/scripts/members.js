@@ -20,11 +20,12 @@ const displayMembers = (members) => {
         let section = document.createElement("section");
         
         let logo = document.createElement("img");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let website = document.createElement("a");
-        let level = document.createElement("p"); 
+        let level = document.createElement("p");
+
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phone_number;
