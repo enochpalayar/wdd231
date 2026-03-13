@@ -32,6 +32,25 @@
         border-bottom: 2px solid var(--logo);
     }
 
+
+/*************************LIST - LARGE VIEW*********************/
+#members.list {
+    max-width: 1000px;
+    width: 100%;
+}
+
+#members.list section h2 {  
+    font-size: 1.5rem;
+}
+
+#members.list section p {
+    font-size: 1rem;
+}
+
+#members.list section a {
+    font-size: 1rem;
+}
+
 /****************************FOOTER*****************************/
     footer {
         display: grid;
