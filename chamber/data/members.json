@@ -3,7 +3,7 @@
         {
             "name" : "LCC Mall",
             "address" : "San Francisco, Calabanga, Camarines Sur",
-            "phone_number" : "+639623208965",
+            "phone_number" : "(+63)962-320-8965",
             "website" : "https://lcc.com.ph/",
             "imageurl" : "logo-1.webp",
             "level" : "1"
@@ -12,7 +12,7 @@
         {
             "name" : "7/11 Store",
             "address" : "San Francisco, Calabanga, Camarines Sur",
-            "phone_number" : "+639190711711",
+            "phone_number" : "(+63)919-071-1711",
             "website" : "https://www.7-eleven.com.ph/`",
             "imageurl" : "logo-2.webp",
             "level" : "3"
@@ -20,7 +20,7 @@
         {
             "name" : " Seaoil Gasoline Station",
             "address" : "San Antonio, Calabanga, Camarines Sur",
-            "phone_number" : "+63283971010",
+            "phone_number" : "(+63)283-971-010",
             "website" : "https://www.seaoil.com.ph/",
             "imageurl" : "logo-3.webp",
             "level" : "3"
@@ -28,7 +28,7 @@
         {
             "name" : "Potato Corner",
             "address" : "San Francisco, Calabanga, Camarines Sur",
-            "phone_number" : "+639636739070",
+            "phone_number" : "(+63)963-673-9070",
             "website" : "https://potatocorner.com/",
             "imageurl" : "logo-4.webp",
             "level" : "2"
@@ -36,7 +36,7 @@
         {
             "name" : "Pure Gold",
             "address" : "San Isidro, Calabanga, Camarines Sur",
-            "phone_number" : "+639175461367",
+            "phone_number" : "(+63)917-546-1367",
             "website" : "https://corporate.puregold.com.ph/",
             "imageurl" : "logo-5.webp",
             "level" : "2"
@@ -44,7 +44,7 @@
         {
             "name" : "South Star Drug",
             "address" : "San Francisco, Calabanga, Camarines Sur",
-            "phone_number" : "+639338757053",
+            "phone_number" : "(+63)933-875-7053",
             "website" : "https://southstardrug.com.ph/",
             "imageurl" : "logo-6.webp",
             "level" : "2"
@@ -52,7 +52,7 @@
         {
             "name" : "MLhuillier",
             "address" : "San Antonio, Calabanga, Camarines Sur",
-            "phone_number" : "+639479992472",
+            "phone_number" : "(+63)947-999-2472",
             "website" : "https://mlhuillier.com/",
             "imageurl" : "logo-7.webp",
             "level" : "2"   

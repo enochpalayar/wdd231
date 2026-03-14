@@ -37,16 +37,20 @@
 #members.list {
     max-width: 1000px;
     width: 100%;
+    padding: 15px;
+}
+
+#members.list section {
+    grid-template-columns: 1.5fr 1.5fr 1fr 0.5fr; 
+    gap: 15px;
+    padding: 12px 25px;
 }
 
 #members.list section h2 {  
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-#members.list section p {
-    font-size: 1rem;
-}
-
+#members.list section p,
 #members.list section a {
     font-size: 1rem;
 }
