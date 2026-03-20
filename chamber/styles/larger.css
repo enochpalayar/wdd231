@@ -32,28 +32,60 @@
         border-bottom: 2px solid var(--logo);
     }
 
+/*********************HERO IMAGE - LARGE VIEW*******************/
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: cover; 
+}
+
+/******************UPDATES & WEATHER - LARGE VIEW***************/
+    section.updates {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+/********************SPOTLIGHTS - LARGE VIEW********************/
+    #spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
 
 /*************************LIST - LARGE VIEW*********************/
-#members.list {
-    max-width: 1000px;
-    width: 100%;
-    padding: 15px;
-}
+    #members.list {
+        max-width: 1000px;
+        width: 100%;
+        padding: 15px;
+    }
 
-#members.list section {
-    grid-template-columns: 1.5fr 1.5fr 1fr 0.5fr; 
-    gap: 15px;
-    padding: 12px 25px;
-}
+    #members.list section {
+        grid-template-columns: 1.5fr 1.5fr 1fr 0.5fr; 
+        gap: 15px;
+        padding: 12px 25px;
+    }
 
-#members.list section h2 {  
-    font-size: 1.3rem;
-}
+    #members.list section h2 {  
+        font-size: 1.3rem;
+    }
 
-#members.list section p,
-#members.list section a {
-    font-size: 1rem;
-}
+    #members.list section p,
+    #members.list section a {
+        font-size: 1rem;
+    }
 
 /****************************FOOTER*****************************/
     footer {
