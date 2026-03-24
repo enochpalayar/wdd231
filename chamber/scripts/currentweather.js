@@ -52,10 +52,10 @@ function displayResults(data){
     humidityP.textContent = `Humidity: ${data.list[0].main.humidity}%`;
 
     const sunriseP = document.createElement('p');
-    sunriseP.textContent = `Sunrise: ${unixtime(data.city.sunrise)}`; 
+    sunriseP.textContent = `Sunrise: ${unixtime(data.city.sunrise)}am`; 
     
     const sunsetP = document.createElement('p');
-    sunsetP.textContent = `Sunset: ${unixtime(data.city.sunset)}`;
+    sunsetP.textContent = `Sunset: ${unixtime(data.city.sunset)}pm`;
 
 
     weatheru.appendChild(tempP);
