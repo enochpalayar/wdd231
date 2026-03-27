@@ -87,6 +87,19 @@
         font-size: 1rem;
     }
 
+/***************************JOIN PAGE************************/
+.join {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr; 
+        gap: 4rem;
+        align-items: start;
+        padding: 2rem;
+    }
+    
+form.form-design {
+        margin: 0;
+    }
+
 /****************************FOOTER*****************************/
     footer {
         display: grid;

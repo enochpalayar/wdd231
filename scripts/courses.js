@@ -61,6 +61,34 @@ const courses = [
     }
 ];
 
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener("click", (event) => {
+        if (event.target === courseDetails) {
+            courseDetails.close();
+        }
+    });
+}
+
 function displayCourses(filter = 'all') {
     const container = document.querySelector('#course-list');
     const creditSpan = document.querySelector('#total-credits');
@@ -80,7 +108,9 @@ function displayCourses(filter = 'all') {
         div.className = `course-card ${course.completed ? 'completed' : ''}`;
         div.innerHTML = `<strong>${course.subject} ${course.number}</strong>`;
         
-        div.onclick = () => alert(`${course.title}\n\n${course.description}\n\nTechnology: ${course.technology.join(', ')}`);
+        div.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         
         container.appendChild(div);
     });

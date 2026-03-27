@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calabanga Chamber of Commerce | Join</title>
+    <meta name="description" content="Be part and join the Calabanga Chamber Commerce and make difference and be different as you establish your business and the Calabanga Community.">
+    <meta name="author" content="Enoch Palayar">
+    <link rel="icon" href="images/logo.ico">
+
+    <meta property="og:title" content="Join Calabanga Chamber of Commerce">
+    <meta property="og:description" content="Be part and join the Calabanga Chamber Commerce and make difference and be different as you establish your business and the Calabanga Community.">
+    <meta property="og:url" content="https://enochpalayar.github.io/wdd231/chamber">
+    <meta property="og:image" content="https://enochpalayar.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD 231 | Calabanga Chamber of Commerce | Enoch Palayar">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/membershiplevel.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <img src="images/logo.webp" alt="Calabanga Logo" width="80">
+                <div class="brand-text">
+                    <span class="brand-name">Calabanga</span>
+                    <span class="brand-sub">Chamber of Commerce</span>
+                </div>
+            </div>
+            <button id="hamburger" aria-label="Toggle Menu"></button>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html" class="active">Join</a>
+                    <a href="discover.html">Discover</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <div class="join">
+        <section>
+        <h2>Membership Application</h2>
+            
+                <form method="GET" action="thankyou.html" class="form-design">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    
+                    <label>Organizational Title <input type="text" name="title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" title="Your Title"></label>
+                    
+                    <label>Email <input type="email" name="email" required placeholder="juandelacruz123@gmail.com" autocomplete="email" title="Your Email"></label>
+                    <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" placeholder="123-456-789" title="Your Phone Number"></label>
+                    <label>Business Name <input type="text" name="organization" required autocomplete="organization" title="Your Business Name"></label>
+                    <label>Business Description <textarea name="description" title="Business description"></textarea></label>
+                    
+                    <h3>Membership Level</h3>
+                    <label><input type="radio" name="level" value="np" required> Non Profit (np)</label>
+                    <label><input type="radio" name="level" value="bronze"> Bronze</label>
+                    <label><input type="radio" name="level" value="silver"> Silver</label>
+                    <label><input type="radio" name="level" value="gold"> Gold</label>
+                    
+                    <input type="submit" value="Join the Chamber">
+                    <input type="hidden" name="timestamp" id="today">
+                </form>
+            </section>
+
+            <section class="mlvl">
+                <h2>Membership Benefits</h2>
+                <aside class="level-card">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button id="mlBtn1">Learn More</button>
+                </aside>
+                <aside class="level-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="mlBtn2">Learn More</button>
+                </aside>
+                <aside class="level-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="mlBtn3">Learn More</button>
+                </aside>
+                <aside class="level-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="mlBtn4">Learn More</button>
+                </aside>
+
+                <dialog id="mlModal">
+                    <div class="modal-header">
+                        <h4 id="mltitle"></h4>
+                        <button id="closeModal">X</button>
+                    </div>
+                    <div id="mldetails"></div>
+                </dialog>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <p><strong>Calabanga Chamber of Commerce</strong></p>
+            <p>0551 San Roque, Calabanga</p>
+            <p>Camarines Sur, Philippines</p>
+            <p>info@calabangacc.org</p>
+            <p>+639624474920</p>
+        </div>
+        
+        <div class="social">
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44"></a>
+            <a href="#"><img src="images/github.svg" alt="GitHub" width="44" height="44"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" width="44" height="44"></a>
+        </div>
+        
+        <div class="project">
+            <p>WDD 231 Project</p>
+            <p>&copy; <span id="currentYear"></span> | Enoch Palayar | Bicol, Philippines</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

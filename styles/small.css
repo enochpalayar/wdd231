@@ -223,6 +223,45 @@ h1 {
     color: var(--primary-color);
 }
 
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+::backdrop {
+    background-color: rgba(44, 62, 80, 0.7);
+}
+
+#closeModal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 2px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+dialog h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+dialog p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
 /**************************************FOOTER*************************************/
 
 footer { 
