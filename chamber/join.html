@@ -53,29 +53,56 @@
         <h1>Join</h1>
         <div class="join">
         <section>
-        <h2>Membership Application</h2>
-            
-                <form method="GET" action="thankyou.html" class="form-design">
-                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    
-                    <label>Organizational Title <input type="text" name="title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" title="Your Title"></label>
-                    
-                    <label>Email <input type="email" name="email" required placeholder="juandelacruz123@gmail.com" autocomplete="email" title="Your Email"></label>
-                    <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" placeholder="123-456-789" title="Your Phone Number"></label>
-                    <label>Business Name <input type="text" name="organization" required autocomplete="organization" title="Your Business Name"></label>
-                    <label>Business Description <textarea name="description" title="Business description"></textarea></label>
-                    
-                    <h3>Membership Level</h3>
-                    <label><input type="radio" name="level" value="np" required> Non Profit (np)</label>
-                    <label><input type="radio" name="level" value="bronze"> Bronze</label>
-                    <label><input type="radio" name="level" value="silver"> Silver</label>
-                    <label><input type="radio" name="level" value="gold"> Gold</label>
-                    
-                    <input type="submit" value="Join the Chamber">
-                    <input type="hidden" name="timestamp" id="today">
-                </form>
-            </section>
+            <h2>Membership Application</h2>
+            <form method="GET" action="thankyou.html" class="form-design">
+                <label for="first">First Name 
+                    <input type="text" id="first" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+                
+                <label for="last">Last Name 
+                    <input type="text" id="last" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+                
+                <label for="title">Job Title 
+                    <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" title="Your Professional Title">
+                </label>
+                
+                <label for="email">Email 
+                    <input type="email" id="email" name="email" required placeholder="juandelacruz123@gmail.com" autocomplete="email" title="Your Email">
+                </label>
+                
+                <label for="phone">Mobile Phone 
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="123-456-789" title="Your Phone Number">
+                </label>
+                
+                <label for="organization">Business Name 
+                    <input type="text" id="organization" name="organization" required autocomplete="organization" title="Your Business Name">
+                </label>
+                
+                <label for="description">Business Description 
+                    <textarea id="description" name="description" title="Business description"></textarea>
+                </label>
+                
+                <fieldset class="membership-group">
+                    <legend>Membership Level</legend>
+                    <label>
+                        <input type="radio" name="level" value="np" required> Non Profit (np)
+                    </label>
+                    <label>
+                        <input type="radio" name="level" value="bronze"> Bronze
+                    </label>
+                    <label>
+                        <input type="radio" name="level" value="silver"> Silver
+                    </label>
+                    <label>
+                        <input type="radio" name="level" value="gold"> Gold
+                    </label>
+                </fieldset>
+                
+                <input type="submit" value="Join the Chamber">
+                <input type="hidden" name="timestamp" id="today">
+            </form>
+        </section>
 
             <section class="mlvl">
                 <h2>Membership Benefits</h2>
@@ -98,7 +125,7 @@
 
                 <dialog id="mlModal">
                     <div class="modal-header">
-                        <h4 id="mltitle"></h4>
+                        <h4 id="mltitle">Membership Level</h4>
                         <button id="closeModal">X</button>
                     </div>
                     <div id="mldetails"></div>
