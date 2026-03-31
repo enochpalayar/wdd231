@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: var(--primary-pink);
+    background-color: var(--dark-pink);
     color: var(--white);
     padding: 2.5rem 1rem;
     text-align: center;
