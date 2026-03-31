@@ -1,5 +1,4 @@
 :root {
-    --primary-pink: #D81B60; 
     --soft-pink: #FFF0F5;    
     --dark-pink: #9E003A;    
     --text-color: #2D2D2D;   
@@ -38,7 +37,7 @@ section {
     margin-bottom: 2.5rem;
     padding: 2rem;
     border-radius: 0 15px 15px 0;
-    border-left: 8px solid var(--primary-pink);
+    border-left: 8px solid var(--dark-pink);
     background-color: var(--soft-pink);
 }
 
@@ -64,6 +63,21 @@ h2, h3 {
     font-weight: bold;
     text-align: center;
     box-shadow: 2px 2px 5px #0000000d;
+}
+
+.primary-accent {
+    background-color: var(--dark-pink);
+    color: var(--white);
+}
+
+.secondary-bg {
+    background-color: var(--soft-pink);
+    color: var(--dark-pink);
+}
+
+.primary-text {
+    background-color: var(--text-color);
+    color: var(--white);
 }
 
 .wireframe-container {
