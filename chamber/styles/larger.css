@@ -88,16 +88,29 @@
     }
 
 /***************************JOIN PAGE************************/
-.join {
+    .join {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr; 
         gap: 4rem;
         align-items: start;
         padding: 2rem;
     }
-    
-form.form-design {
+        
+    form.form-design {
         margin: 0;
+    }
+/***************************DISCOVER PAGE************************/
+    #allplaces {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "photo addr"
+            "photo desc"
+            "photo btn";
     }
 
 /****************************FOOTER*****************************/

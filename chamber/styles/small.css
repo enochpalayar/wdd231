@@ -766,7 +766,78 @@ form.form-design {
 .btn-primary:hover {
     background-color: var(--logo);
 }
+/**************************DISCOVER PAGE*************************/
 
+.discover h2, 
+#timeBetween {
+  margin-left: 1.6rem;
+  margin-bottom: 0.5rem;
+}  
+
+.emphasis-cost {
+  display: inline-block; 
+  margin-top: 8px;       
+  padding: 2px 0;        
+  font-weight: bold;    
+  color: var(--primary); 
+}
+
+#allplaces {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.discover-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "title"
+        "photo"
+        "addr"
+        "desc"
+        "btn";
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+.discover-card h2 { 
+    grid-area: title; 
+    margin: 0 0 0.5rem 0; 
+    font-size: 1.4rem; 
+}
+.discover-card figure { 
+    grid-area: photo; 
+    margin: 0; 
+}
+.discover-card figure img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+.discover-card address { 
+    grid-area: addr; 
+    font-style: normal; 
+    font-weight: bold; 
+    margin: 0.5rem 0; 
+    color: var(--secondary); 
+}
+.discover-card p { 
+    grid-area: desc; 
+    margin: 0.5rem 0; 
+    font-size: 0.9rem; 
+}
+.discover-card button { 
+    grid-area: btn; 
+    padding: 0.8rem; 
+    background: var(--primary); 
+    color: var(--plain); 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+}
 /****************************FOOTER*****************************/
 footer {
         display: flex;
