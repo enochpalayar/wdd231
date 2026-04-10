@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belle’s Best Finds | Catalog</title>
+    <meta name="description" content="Belle's Best Finds Online Shop Catalog page where timeless dresses find their next belle">
+    <meta name="author" content="Enoch Palayar">
+    <link rel="icon" href="images/logo.ico">
+
+    <meta property="og:title" content="The Belle's Best Finds Catalog Page, learn more of us.">
+    <meta property="og:description" content="Belle's Best Finds Online Shop Catalog page where timeless dresses find their next belle">
+    <meta property="og:url" content="https://enochpalayar.github.io/wdd231/project">
+    <meta property="og:image" content="https://enochpalayar.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD 231 | The Belle's Best Finds | Enoch Palayar">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="scripts/global.js" defer></script>
+    <script src="scripts/catalog.js" type="module"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <img src="images/logo.webp" alt="Belle's Logo" width="80">
+                <div class="brand-text">
+                    <span class="brand-name">The Belle's</span>
+                    <span class="brand-sub">Best Finds</span>
+                </div>
+            </div>
+            <button id="hamburger" aria-label="Toggle Menu">☰</button>
+            <nav id="primary-nav">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="catalog.html" class="active">Catalog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="wayfinding">
+        <h1>Catalog</h1>
+        </section>
+        <section class="catalog-hero">
+            <h2>Our Curated Collection</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Dresses">Dresses</button>
+                <button class="filter-btn" data-filter="Tops">Tops</button>
+            </div>
+        </section>
+
+        <div id="catalog-grid" class="catalog-grid"></div>
+
+        <dialog id="item-modal">
+            <div id="modal-content"></div>
+            <button id="close-modal" class="btn-primary">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/itsbellemago" class="social-icon" target="_blank"><img src="images/facebook.svg" alt="FB"></a>
+            <a href="https://www.instagram.com/alliahbelleee/" class="social-icon" target="_blank"><img src="images/instagram.svg" alt="IG"></a>
+            <a href="https://www.tiktok.com/@thebellesbestfinds" class="social-icon" target="_blank"><img src="images/tiktok.svg" alt="TT"></a>
+        </div>
+        <p>&copy; 2026 | Enoch Palayar | Bicol, Philippines</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

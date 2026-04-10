@@ -1,0 +1,71 @@
+/* Media Query for Tablet/Desktop */
+@media screen and (min-width: 768px) {
+    
+    /*********************HEADER & NAV - LARGE*********************/
+    #hamburger { display: none; } 
+
+    nav { 
+        display: block !important; 
+        position: static; 
+        width: auto; 
+        box-shadow: none;
+        padding: 0;
+        margin-right: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        border-bottom: none;
+    }
+
+
+    /************************HERO IMAGE - LARGE******************/
+    .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding: 5rem 8%;
+        gap: 4rem;
+    }
+
+    .hero-content h1 { font-size: 3.5rem; }
+
+    .hero-image img {
+       box-shadow: -20px 20px 0 var(--soft-pink), 20px -20px 0 var(--dark-pink); /* That high-end offset shadow */
+    }
+
+    /***********************INFO PERKS - LARGE************************/
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 4rem 8%;
+        gap: 1.5rem;
+    }
+
+    .info-box {
+        background: var(--white);
+        border: none;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .info-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    }
+
+    /************************WEATHER UPDATE - LARGE*****************/
+    .api-section {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    /*************************MODAL - LARGE************************/
+    dialog {
+        width: 400px;
+    }
+}

@@ -1,0 +1,136 @@
+[
+  { 
+    "id": 1,
+    "name": "White Floral Midi",
+    "category": "Dresses",
+    "price": 200,
+    "size": "SMALL–SEMI LARGE",
+    "condition": "Like New",
+    "image": "images/dress1.webp" 
+  },
+  { 
+    "id": 2,
+    "name": "Pink Ribbed Knit Top",
+    "category": "Tops",
+    "price": 79,
+    "size": "MEDIUM–LARGE",
+    "condition": "Good",
+    "image": "images/top1.webp"
+  },
+  { 
+    "id": 3,
+    "name": "Cream Dress with Red Hearts",
+    "category": "Dresses",
+    "price": 189,
+    "size": "SMALL–MEDIUM",
+    "condition": "Good",
+    "image": "images/dress2.webp"
+  },
+  { "id": 4, 
+    "name": "Red Ribbed Bow Top",
+    "category": "Tops",
+    "price": 79,
+    "size": "XS–SMALL",
+    "condition": "Good",
+    "image": "images/top2.webp" 
+  },
+  { 
+    "id": 5,
+    "name": "White Floral Puff-Sleeve Dress",
+    "category": "Dresses",
+    "price": 200,
+    "size": "XS–SMALL",
+    "condition": "Excellent",
+    "image": "images/dress3.webp" 
+  },
+  { 
+    "id": 6, 
+    "name": "Pink Knit with White Trim",
+    "category": "Tops",
+    "price": 89,
+    "size": "MEDIUM–LARGE",
+    "condition": "Excellent",
+    "image": "images/top3.webp" 
+  },
+  { 
+    "id": 7,
+    "name": "Dark Floral Button-Down Dress",
+    "category": "Dresses",
+    "price": 200,
+    "size": "SMALL–MEDIUM",
+    "condition": "Like New",
+    "image": "images/dress4.webp"
+  },
+  { 
+    "id": 8, 
+    "name": "Pink/Beige Striped Ribbed Top",
+    "category": "Tops",
+    "price": 119,
+    "size": "SMALL–LARGE",
+    "condition": "Excellent",
+    "image": "images/top4.webp" 
+  },
+  { 
+    "id": 9,
+    "name": "Light Blue Floral V-Neck Dress",
+    "category": "Dresses",
+    "price": 200,
+    "size": "MEDIUM–LARGE",
+    "condition": "Excellent",
+    "image": "images/dress5.webp"
+  },
+  { 
+    "id": 10, 
+    "name": "Multicolor Striped Knit Top",
+    "category": "Tops",
+    "price": 89,
+    "size": "SMALL–MEDIUM",
+    "condition": "Excellent",
+    "image": "images/top5.webp" 
+  },
+  { 
+    "id": 11,
+    "name": "Light Blue Textured Button-Down Dress",
+    "category": "Dresses",
+    "price": 200,
+    "size": "MEDIUM–LARGE",
+    "condition": "Good",
+    "image": "images/dress6.webp"
+  },
+  { 
+    "id": 12, 
+    "name": "Pastel Striped 'Vini' Knit Top",
+    "category": "Tops",
+    "price": 119,
+    "size": "SMALL–MEDIUM",
+    "condition": "Good",
+    "image": "images/top6.webp"
+  },
+  { 
+    "id": 13, 
+    "name": "Long-Sleeved Blue-Gray Floral Dress",
+    "category": "Dresses",
+    "price": 200,
+    "size": "SMALL–LARGE",
+    "condition": "Excellent",
+    "image": "images/dress7.webp"
+  },
+  { 
+    "id": 14, 
+    "name": "Purple Striped Cardigan",
+    "category": "Tops",
+    "price": 119,
+    "size": "SMALL–MEDIUM",
+    "condition": "Excellent", 
+    "image": "images/top7.webp" 
+  },
+  { 
+    "id": 15,
+    "name": "Cream Floral Sweetheart Neckline Dress",
+    "category": "Dresses",
+    "price": 189,
+    "size": "XS–SMALL",
+    "condition": "Like New",
+    "image": "images/dress8.webp"
+  }
+]

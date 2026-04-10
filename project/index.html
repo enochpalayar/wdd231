@@ -3,74 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan | The Belle’s Best Finds</title>
-    <meta name="description" content="Project Site - Belle's Best Find Online Shop">
+    <title>The Belle’s Best Finds | Home</title>
+    <meta name="description" content="Belle's Best Finds Online Shop Home page where timeless dresses find their next belle">
     <meta name="author" content="Enoch Palayar">
-    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="images/logo.ico">
+
+    <meta property="og:title" content="The Belle's Best Finds Home Page, learn more of us.">
+    <meta property="og:description" content="Belle's Best Finds Online Shop Home page where timeless dresses find their next belle">
+    <meta property="og:url" content="https://enochpalayar.github.io/wdd231/project">
+    <meta property="og:image" content="https://enochpalayar.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD 231 | The Belle's Best Finds | Enoch Palayar">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="scripts/global.js" defer></script>
+    <script src="scripts/weather.js"defer></script>
+
 </head>
 <body>
     <header>
-        <h1>The Belle’s Best Finds Site Plan</h1>
+        <div class="header-container">
+            <div class="brand">
+                <img src="images/logo.webp" alt="Belle's Logo" width="80">
+                <div class="brand-text">
+                    <span class="brand-name">The Belle's</span>
+                    <span class="brand-sub">Best Finds</span>
+                </div>
+            </div>
+            <button id="hamburger" aria-label="Toggle Menu">☰</button>
+            <nav id="primary-nav">
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="catalog.html">Catalog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>1. Site Name</h2>
-            <p><strong>The Belle’s Best Finds</strong></p>
-            <p>The name "The Belle’s Best Finds" is designed to create a sense of discovery and elegance. "Belle" (meaning beautiful) targets our female audience, while "Best Finds" highlights the curated nature of our preloved inventory, suggesting that every item is a unique treasure.</p>
-        </section>
-
-        <section>
-            <h2>2. Site Purpose</h2>
-            <p>The primary purpose of this site is to transform a growing social-media-based online boutique into a professional digital storefront. It provides a structured platform to catalog at least 15 unique preloved items dynamically using a JSON-driven directory. This site serves to organize inventory for the seller while offering customers an intuitive, easy-to-browse interface that simplifies the inquiry and reservation process.</p>
-        </section>
-
-        <section>
-            <h2>3. Scenarios</h2>
-            <ul>
-                <li>"Where can I find affordable and trendy pre-loved dresses?"</li>
-                <li>"How do I contact the seller about an item I like?"</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>4. Color Schema</h2>
-            <div class="color-palette">
-                <div class="color-box primary-accent">Dark Pink (#9E003A) - Accents/Buttons</div>
-                <div class="color-box secondary-bg">Blush (#FFF0F5) - Backgrounds</div>
-                <div class="color-box primary-text">Charcoal (#2D2D2D) - Primary Text</div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Where timeless dresses find their next belle</h1>
+                <p>Curated high-quality preloved fashion from Bicol.</p>
+                <a href="catalog.html" class="btn-primary">Shop Now</a>
             </div>
-            <p><strong>Dark Pink (#9E003A):</strong> Used for call-to-action buttons and headers to solve previous contrast issues and draw attention to interactive elements.</p>
-            <p><strong>Soft Blush (#FFF0F5):</strong> Used as a section background to create a soft, feminine boutique aesthetic without overwhelming the text.</p>
-            <p><strong>Charcoal (#2D2D2D):</strong> Used for all body copy and technical details to ensure high contrast and readability.</p>
-        </section>
-
-        <section>
-            <h2>5. Typography</h2>
-            <h3>Playfair Display (Serif)</h3>
-            <p>Applied to: <strong>Headings (H1, H2, H3)</strong>. This font was chosen for its classic, elegant feel that mirrors the "Belle" brand identity.</p>
-            
-            <h3>Josefin Sans (Sans-Serif)</h3>
-            <p>Applied to: <strong>Body Text, Buttons, and Navigation</strong>. This modern, geometric font ensures that product details like price and size remain clear and legible.</p>
-        </section>
-
-        <section>
-            <h2>6. Wireframes</h2>
-            <h3>Mobile View</h3>
-            <div class="wireframe-container">
-                <img src="images/belle-small.png" alt="Mobile wireframe for The Belle's Best Finds" class="wireframe-img">
-            </div>
-
-            <h3>Desktop View</h3>
-            <div class="wireframe-container">
-                <img src="images/belle-large.png" alt="Desktop wireframe for The Belle's Best Finds" class="wireframe-img">
+            <div class="hero-image">
+                <img src="images/hero-model.webp" alt="Model wearing a Belle's Find dress">
             </div>
         </section>
+        <div class="wayfinding-hero">
+            <h2>Home</h2>
+        </div>
+
+        <section class="api-section">
+            <div id="weather-card" class="glass-panel">
+                <div class="weather-header">
+                    <img src="images/icon-weather.svg" alt="" id="weather-icon-placeholder">
+                    <h3>Labo, Bicol</h3>
+                </div>
+                <div id="weather-display" class="weather-info">
+                    <span class="loading">Updating live weather...</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="action-bar">
+            <button id="open-guide" class="btn-secondary pulse-glow">
+                <span class="sparkle">✨</span> New here? View Order Guide
+            </button>
+        </div>
+
+        <section class="info-grid">
+            <div class="info-box">
+                <img src="images/icon-verify.svg" alt="Check">
+                <h4>Verified</h4>
+                <p>Checked by experts for quality.</p>
+            </div>
+            <div class="info-box">
+                <img src="images/icon-delivery.svg" alt="Truck">
+                <h4>Fast Delivery</h4>
+                <p>Quick shipping within Bicol.</p>
+            </div>
+            <div class="info-box">
+                <img src="images/icon-camera.svg" alt="No camera">
+                <h4>No Hassle</h4>
+                <p>Actual photos, no studio tricks.</p>
+            </div>
+            <div class="info-box">
+                <img src="images/icon-reward.svg" alt="Card">
+                <h4>Instant Reward</h4>
+                <p>Earn points on every find.</p>
+            </div>
+        </section>
+
+        <dialog id="order-guide">
+            <h2>Order Guide</h2>
+            <p>1. Browse the Catalog.</p>
+            <p>2. Send an Inquiry.</p>
+            <p>3. Secure your find via GCash.</p>
+            <button id="close-guide" class="btn-primary">Got it!</button>
+        </dialog>
     </main>
+
     <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/itsbellemago" class="social-icon" target="_blank"><img src="images/facebook.svg" alt="FB"></a>
+            <a href="https://www.instagram.com/alliahbelleee/" class="social-icon" target="_blank"><img src="images/instagram.svg" alt="IG"></a>
+            <a href="https://www.tiktok.com/@thebellesbestfinds" class="social-icon" target="_blank"><img src="images/tiktok.svg" alt="TT"></a>
+        </div>
         <p>&copy; 2026 | Enoch Palayar | Bicol, Philippines</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
