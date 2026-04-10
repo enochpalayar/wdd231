@@ -134,7 +134,7 @@ nav.show {
 }
 
 /* Shop Button */
-.btn-primary {
+.belle-btn-fill {
     display: inline-block;
     background-color: var(--dark-pink);
     color: var(--white);
@@ -148,7 +148,7 @@ nav.show {
     border: none;
 }
 
-.btn-primary:hover {
+.belle-btn-fill:hover {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 10px 20px #9e003a4d;
 }
@@ -241,7 +241,7 @@ nav.show {
 }
 
 /* Order Guide Button */
-.btn-secondary {
+.belle-btn-outline {
     background: transparent;
     border: 2px solid var(--dark-pink);
     color: var(--dark-pink);
@@ -252,7 +252,7 @@ nav.show {
     transition: var(--transition);
 }
 
-.btn-secondary:hover {
+.belle-btn-outline:hover {
     background-color: var(--dark-pink);
     color: var(--white);
     transform: scale(1.05);
