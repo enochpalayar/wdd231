@@ -5,7 +5,7 @@
     #hamburger { display: none; } 
 
     nav { 
-        display: block !important; 
+        display: block; 
         position: static; 
         width: auto; 
         box-shadow: none;
