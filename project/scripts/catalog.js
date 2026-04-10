@@ -1,4 +1,4 @@
-const grid = document.querySelector('#catalog-grid');
+const grid = document.querySelector('#belle-product-display');
 const filterBtns = document.querySelectorAll('.filter-btn');
 let allProducts = [];
 
@@ -9,7 +9,7 @@ async function getProducts() {
 }
 
 function displayProducts(products) {
-    const container = document.querySelector('.catalog-grid');
+    const container = document.querySelector('.belle-product-display');
     container.innerHTML = ""; 
 
     products.forEach(product => {
@@ -24,7 +24,7 @@ function displayProducts(products) {
                  height="450">
             <h3>${product.name}</h3> 
             <p class="price">₱${product.price}</p>
-            <button class="btn-secondary">View Details</button>
+            <button class="belle-btn-outline">View Details</button>
         `;
         container.appendChild(card);
     });

@@ -31,7 +31,7 @@ header {
     z-index: 1000;
 }
 
-.header-container {
+.belle-header-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,20 +295,20 @@ section {
     padding: 3rem 1.5rem;
 }
 
-.info-grid {
+.belle-perks-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
-.info-box {
+.belle-perk-card {
     padding: 1.5rem;
     border: 1px solid var(--soft-pink);
     border-radius: 8px;
     text-align: center;
 }
 
-.info-box img { 
+.belle-perk-card img { 
     width: 45px; 
     margin-bottom: 0.5rem; 
 }
@@ -354,7 +354,7 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.catalog-grid {
+.belle-product-display {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 20px;
