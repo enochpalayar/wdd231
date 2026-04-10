@@ -11,7 +11,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        console.error("Weather Data Error:", error);
     }
 }
 
@@ -20,7 +20,7 @@ function displayResults(data) {
     const desc = data.weather[0].description;
     
     weatherDisplay.innerHTML = `
-        <img src="${iconsrc}" alt="${desc}" class="weather-img">
+        <img src="${iconsrc}" alt="${desc}" class="weather-img" loading="lazy">
         <span class="temp">${data.main.temp.toFixed(0)}°C</span>
         <p id="weather-desc">${desc}</p>
     `;
