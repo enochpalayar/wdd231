@@ -9,17 +9,24 @@ async function getProducts() {
 }
 
 function displayProducts(products) {
-    grid.innerHTML = "";
-    products.forEach(item => {
+    const container = document.querySelector('.catalog-grid');
+    container.innerHTML = ""; 
+
+    products.forEach(product => {
         const card = document.createElement('section');
-        card.classList.add('product-card');
+        card.className = 'product-card';
+
         card.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" loading="lazy">
-            <h3>${item.name}</h3>
-            <p class="price">₱${item.price}</p>
-            <button class="btn-secondary" onclick="showDetails(${item.id})">View Details</button>
+            <img src="${product.image}" 
+                 alt="${product.name}" 
+                 loading="lazy" 
+                 width="300" 
+                 height="450">
+            <h3>${product.name}</h3> 
+            <p class="price">₱${product.price}</p>
+            <button class="btn-secondary">View Details</button>
         `;
-        grid.appendChild(card);
+        container.appendChild(card);
     });
 }
 

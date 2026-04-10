@@ -20,9 +20,9 @@ function displayResults(data) {
     const desc = data.weather[0].description;
     
     weatherDisplay.innerHTML = `
-        <img src="${iconsrc}" alt="${desc}" style="width: 50px; vertical-align: middle;">
+        <img src="${iconsrc}" alt="${desc}" class="weather-img">
         <span class="temp">${data.main.temp.toFixed(0)}°C</span>
-        <p style="font-size: 0.8rem; text-transform: capitalize; margin-top: 5px;">${desc}</p>
+        <p id="weather-desc">${desc}</p>
     `;
 }
 

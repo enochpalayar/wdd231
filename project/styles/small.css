@@ -91,7 +91,7 @@ nav.show {
     width: 100%;
     background: var(--white);
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px #0000001a;
     border-bottom: 2px solid var(--soft-pink);
     box-sizing: border-box; 
     overflow-x: hidden; 
@@ -173,7 +173,6 @@ nav.show {
 .wayfinding-hero {
     padding: 2.5rem 1rem; 
     text-align: center;
-
     margin-bottom: 0;
 }
 
@@ -199,7 +198,6 @@ nav.show {
 }
 
 /* Weather Update */
-
 .weather-section {
     padding-top: 2rem;
     display: flex;
@@ -211,9 +209,9 @@ nav.show {
     border: 1px solid var(--soft-pink);
     border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 10px 30px rgba(158, 0, 58, 0.05);
-    width: 90%;
-    max-width: 350px;
+    box-shadow: 0 10px 30px #9e003a0d;
+    width: 80%;
+    max-width: 330px;
     margin: 2rem auto;
     text-align: center;
 }
@@ -229,6 +227,17 @@ nav.show {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--charcoal);
+}
+
+.weather-img {
+    width: 50px; 
+    vertical-align: middle;
+}
+
+#weather-desc {
+    font-size: 0.8rem; 
+    text-transform: capitalize; 
+    margin-top: 5px;
 }
 
 /* Order Guide Button */
@@ -255,9 +264,9 @@ nav.show {
 }
 
 @keyframes pulse-border {
-    0% { box-shadow: 0 0 0 0 rgba(158, 0, 58, 0.4); }
-    70% { box-shadow: 0 0 0 10px rgba(158, 0, 58, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(158, 0, 58, 0); }
+    0% { box-shadow: 0 0 0 0 #9e003a66; }
+    70% { box-shadow: 0 0 0 10px #9e003a00; }
+    100% { box-shadow: 0 0 0 0 #9e003a00; }
 }
 
 .action-bar {
@@ -271,12 +280,12 @@ dialog {
     border-radius: 12px;
     padding: 2rem;
     background: var(--white);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 50px #00000033;
     border-top: 6px solid var(--dark-pink);
 }
 
 dialog::backdrop {
-    background: rgba(45, 45, 45, 0.8);
+    background: #2d2d2dcc;
     backdrop-filter: blur(4px);
 }
 
@@ -309,7 +318,7 @@ section {
     background-color: var(--soft-pink);
     padding: 3rem 1rem;
     text-align: center;
-    border-bottom: 1px solid rgba(158, 0, 58, 0.1);
+    border-bottom: 1px solid #9e003a1a;
     margin-bottom: 2rem;
 }
 
@@ -364,7 +373,7 @@ section {
 }
 
 .product-card:hover {
-    box-shadow: 0 10px 20px rgba(158, 0, 58, 0.1);
+    box-shadow: 0 10px 20px #9e003a1a;
 }
 
 .product-card img {
@@ -425,7 +434,7 @@ section {
 }
 
 #image-modal::backdrop {
-    background: rgba(0, 0, 0, 0.8);
+    background: #000000cc;
 }
 
 #modal-img {
@@ -475,7 +484,7 @@ section {
     border: 1px solid var(--soft-pink);
     border-radius: 5px;
     font-family: inherit;
-    width: 100%; /* Fixes horizontal scroll issues */
+    width: 100%; 
     box-sizing: border-box; 
 }
 
@@ -494,12 +503,12 @@ section {
     background: var(--white);
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px #0000000d;
     text-align: center;
 }
 
 .submitted-info {
-    text-align: left; /* Keeps the list readable */
+    text-align: left; 
     background: var(--soft-pink);
     padding: 1.5rem;
     border-radius: 8px;
