@@ -559,8 +559,51 @@ section {
 footer {
     padding: 2rem;
     text-align: center;
-    background-color: var(--white);
+    background-color: #f9f9f9;
     border-top: 1px solid var(--soft-pink);
+}
+
+.footer-video-link {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-video-link p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dark-pink);
+    margin: 0;
+}
+
+.video-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--dark-pink);
+    border: 1px solid var(--soft-pink);
+    border-radius: 50px; 
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.video-btn:hover {
+    background-color: var(--dark-pink);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.video-btn .icon {
+    font-size: 0.7rem;
 }
 
 .social-links {
