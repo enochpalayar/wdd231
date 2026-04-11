@@ -1,3 +1,6 @@
+import { setupImageModal } from './modal.js';
+
+const modalTools = setupImageModal();
 const grid = document.querySelector('#belle-product-display');
 const filterBtns = document.querySelectorAll('.filter-btn');
 let allProducts = [];
