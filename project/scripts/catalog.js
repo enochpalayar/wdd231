@@ -3,13 +3,18 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 let allProducts = [];
 
 async function getProducts() {
-    const response = await fetch('data/catalog.json');
-    allProducts = await response.json();
-    displayProducts(allProducts);
+    try {
+        const response = await fetch('data/catalog.json');
+        allProducts = await response.json();
+        displayProducts(allProducts);
+    } catch (error) {
+        console.error("Error loading products:", error);
+    }
 }
 
 function displayProducts(products) {
     const container = document.querySelector('.belle-product-display');
+    if (!container) return; 
     container.innerHTML = ""; 
 
     products.forEach(product => {
@@ -24,11 +29,29 @@ function displayProducts(products) {
                  height="450">
             <h3>${product.name}</h3> 
             <p class="price">₱${product.price}</p>
-            <button class="belle-btn-outline">View Details</button>
+            <button class="belle-btn-outline" onclick="showDetails('${product.id}')">View Details</button>
         `;
         container.appendChild(card);
     });
 }
+
+window.showDetails = (id) => {
+    const modal = document.querySelector('#item-modal');
+    const modalContent = document.querySelector('#modal-content');
+    
+    const item = allProducts.find(p => String(p.id) === String(id));
+    
+    if (item) {
+        modalContent.innerHTML = `
+            <h2>${item.name}</h2>
+            <p><strong>Size:</strong> ${item.size}</p>
+            <p><strong>Condition:</strong> ${item.condition}</p>
+            <p><strong>Category:</strong> ${item.category}</p>
+            <p class="price">₱${item.price}</p>
+        `;
+        modal.showModal();
+    }
+};
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -44,20 +67,6 @@ filterBtns.forEach(btn => {
 });
 
 const modal = document.querySelector('#item-modal');
-const modalContent = document.querySelector('#modal-content');
-
-window.showDetails = (id) => {
-    const item = allProducts.find(p => p.id === id);
-    modalContent.innerHTML = `
-        <h2>${item.name}</h2>
-        <p><strong>Size:</strong> ${item.size}</p>
-        <p><strong>Condition:</strong> ${item.condition}</p>
-        <p><strong>Category:</strong> ${item.category}</p>
-        <p class="price">₱${item.price}</p>
-    `;
-    modal.showModal();
-};
-
 document.querySelector('#close-modal').addEventListener('click', () => modal.close());
 
 getProducts();
