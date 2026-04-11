@@ -592,14 +592,14 @@ footer {
     font-size: 0.9rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px #0000000d;
 }
 
 .video-btn:hover {
     background-color: var(--dark-pink);
     color: var(--white);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px #0000001a;
 }
 
 .video-btn .icon {
